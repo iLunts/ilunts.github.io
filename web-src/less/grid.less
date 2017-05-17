@@ -1,7 +1,9 @@
 // out: ../css/reset.css, compress: true, sourceMap: false
 @import 'variables.less';
 // ----------------------------------------------------------
-// 
+// Elements:          '.container'
+//                    '.container-fluid'
+//                    '.'
 // ----------------------------------------------------------
 .container {
   position: relative;
@@ -11,13 +13,15 @@
   padding-left: @container-padding;
 }
 
-@media (min-width: 576px) {
+// @media (min-width: 576px) {
+@media (min-width: @breakpoint-xs-min) {
   .container {
     padding-right: @container-padding;
     padding-left: @container-padding;
   }
 }
 
+// @media (min-width: 768px) {
 @media (min-width: 768px) {
   .container {
     padding-right: @container-padding;
@@ -25,6 +29,7 @@
   }
 }
 
+// @media (min-width: 992px) {
 @media (min-width: 992px) {
   .container {
     padding-right: @container-padding;
@@ -32,6 +37,7 @@
   }
 }
 
+// @media (min-width: 1200px) {
 @media (min-width: 1200px) {
   .container {
     padding-right: @container-padding;
